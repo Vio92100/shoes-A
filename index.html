@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shoes & A</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="banner">
+            <div class="container">
+                <h1>Shoes&A</h1>
+                <h2>The revolutionary shoe creation brand</h2>
+                <img class="avatar" src="images/avatar.png" alt="Shoes&A's Logo">
+                <a class="button" href="#work-section">Discover our work</a>
+            </div>
+        </div>
+        <div class="container" id="work-section"> 
+            
+            <h2>Our top products :</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="images/shoe1.png" alt="Basketball Shoes">
+                    <h3>Basketball Shoes</h3>
+                </div>
+                <div class="card">
+                    <img src="images/shoe2.png" alt="Antique Boots">
+                    <h3>Antique Boots</h3>
+                </div>
+                <div class="card">
+                    <img src="images/shoe3.png" alt="Babouches">
+                    <h3>Babouches</h3>
+                </div>
+                <div class="card">
+                    <img src="images/shoe5.png" alt="Kerokerokeroppi Boots">
+                    <h3>Kerokerokeroppi Boots</h3>
+                </div>
+                <div class="card" id="gold">
+                    <img src="images/shoe4.png" alt="Gold-armor Shoes">
+                    <h3>Gold-Armor Shoes</h3>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            window.onload = function() {
+                // Remove the hash from the URL
+                if (window.location.hash) {
+                    history.replaceState(null, null, window.location.pathname);
+                }
+            };
+        </script>
+        
+    </body>
+</html>
